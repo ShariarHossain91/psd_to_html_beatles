@@ -15,16 +15,14 @@
 }
 
 .container {
-    width: 960px;
+    width: 1000px;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid blue; */
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 
 .col-6 {
@@ -32,12 +30,12 @@
 }
 
 .header-left-content {
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 
 .header-left-content p {
     color: white;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .header-right-contant {
@@ -55,6 +53,7 @@
 
 .header-right-contant ul li a {
     color: white;
+    font-size: 20px;
     transition: 0.3s;
 }
 
@@ -108,9 +107,17 @@
 
 /*----------------------------------Banner----------------------------------------*/
 
-section.Banner {
-    background: #a6a6a6;
+
+.Banner-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: linear-gradient( #b6b5b557,#2221216b),url(./Images/writing-and-typing-lover.jpg);
+    background-size: cover;
 }
+
+
 
 .banner-con {
     padding: 80px 0px;
@@ -189,9 +196,9 @@ section.Banner {
     position: absolute;
     background-image: url(./Images/under-line.png);
     content: '';
-    top: 26px;
-    height: 7px;
-    width: 44px;
+    top: 32px;
+    height: 5px;
+    width: 38px;
     background-size: contain;
 }
 
@@ -402,7 +409,7 @@ section.portfolio {
 /*--------------------------------team-------------------------------------------*/
 
 section.team {
-    margin-bottom: 190px;
+    margin-bottom: 60px;
 }
 
 .col-3 {
@@ -454,6 +461,8 @@ section.team {
 
 .team-image:first-child {
     margin-left: 5px;
+    width: 225px;
+    height: 273px;
 }
 
 .team-picture h2 {
@@ -477,6 +486,286 @@ section.team {
 
 
 
+
+
+
+
+
+
+
+/*-----------------------------------TESTIMONIAL------------------------*/
+
+section.testimonial {
+    margin-bottom: 100px;
+}
+
+.single-box-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.single-box-img img {
+    width: 100%;
+}
+
+
+.single-box-content h1 {
+    display: block;
+    text-align: center;
+    font-family: 'Oswald';
+    color: #595050;
+}
+
+.single-box-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 36%;
+    padding-top: 7px;
+}
+
+.single-box-content ul li {
+    list-style: none;
+    margin-right: 12px;
+}
+
+.single-box-content ul li a {
+    color: #007effd1;
+}
+
+
+.single-box-content h2 {
+    display: block;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #595050;
+    margin-top: 6px;
+}
+
+.single-box-content p {
+    color: #595050;
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    display: block;
+    margin-top: 13px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.single-box {
+    margin-top: 190px;
+    position: relative;
+}
+
+.single-box-content {
+    background: #dbdbdbc7;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.single-box-content::before {
+    content: "";
+    height:0;
+    width:0;
+    border-left: 35px solid #ffffff00;
+    border-right: 35px solid #ffffff00;
+    border-bottom: 30px solid #e3e3e3;
+    position:absolute;
+    left: 43%;
+    top: -14%;
+    }
+
+
+
+
+
+
+   
+
+
+
+
+
+    /*--------------------------------------footer--------------------*/
+
+    .f-box h2 {margin-top: 29px;display: block;color: white;font-family: 'Oswald';letter-spacing: -1px;font-weight: 500;}
+
+    .footer-content{background: #353535 ;}
+    
+    .f-box p {
+            color: white;
+            margin-top: 25px;
+            font-family: 'Oswald';
+            font-weight: 300;
+            font-size: 16px;
+    }
+    
+    .f-box {
+            margin-top: 20px;
+            margin-right: 0px;
+            margin-bottom: 40px;
+    }
+
+
+    .f-box a i {
+        font-size: 20px;
+        margin-top: 11px;
+}
+
+.f-box {
+        overflow: hidden;
+}
+
+
+      /*-------contacts--------*/
+
+ul#contacts {
+    color: #f7f7f7;
+    font-size: 16px;
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+.contact-box {
+    display: flex;
+    margin-top: 25px;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact-icon a {
+    display: block;
+    border: 1px solid #00b8ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #00b8ff;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-icon a:hover {
+    background: white;
+    color: #00b8ff;
+    border-color: white;
+}
+
+
+.contact {
+    margin-left: 20px;
+}
+
+.contact ul {
+    color: white;
+    font-family: 'Oswald';
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+       /*-----------IMPORTANT LINKS-------------*/
+
+
+.col-2 {flex-basis: 20%;}
+
+.important-links-row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  
+.important-links ul {
+    overflow: hidden;
+}
+
+.important-links ul li {
+    list-style: none;
+}
+
+.important-links ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Oswald';
+}
+
+.important-links ul li a:hover {color:#00b8ff}
+
+     /*----------------FLICKR PHOTOS---------------------------*/
+
+.fli-img-col-3 { flex-basis: 30%; }
+
+.flk-img-row {
+    display: flex;
+}
+
+.flk-img-col-4 {
+    flex-basis: 33.3333%;
+}
+
+.flickr-img ul li a img {
+    width: 100%;
+    height: 90px;
+}
+
+.flickr-img ul li {
+    list-style: none;
+    margin: 5px;
+    display: block;
+}
+
+.flickr-img {display: block;margin-top: 26px;}
+
+
+
+
+/*---------------------------copy right---------------------------*/
+
+.copy-right {
+    background: #5f5e5e;
+}
+
+.copy-right-content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copy-right-content p {
+    margin-left: 25%;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.copy-right-content h3 {
+    color: #00b8ff;
+    margin-left: 19px;
+    display: block;
+}
 
 
 
